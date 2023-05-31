@@ -1,0 +1,335 @@
+    /* Общие стили */
+
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    }
+    
+    header {
+    background-color: #009999;
+    padding: 20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    }
+    
+    header img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+    }
+    
+    h1 {
+    margin: 0;
+    font-size: 24px;
+    }
+    
+    nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    }
+    
+    nav ul li {
+    margin-right: 10px;
+    }
+    
+    nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    }
+    
+    nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    }
+    
+    .user-menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    }
+    
+    .button-container {
+    margin-left: 10px;
+    }
+    
+    .register-button,
+    .login-button {
+    padding: 8px 12px;
+    background-color: #8e44ad;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    }
+    
+    .register-button:hover,
+    .login-button:hover {
+    background-color: #470c61;
+    color: #fff;
+    }
+    
+    main {
+    padding: 20px;
+    }
+    
+    section {
+    margin-bottom: 20px;
+    }
+    
+    h2 {
+    font-size: 20px;
+    margin-top: 0;
+    }
+    
+    footer {
+    background-color: #009999;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    }
+    
+    /* Стили для каждой вкладки */
+    
+    /* Главная страница */
+    section:first-child h2 {
+    font-size: 28px;
+    color: #009999;
+    }
+    
+    /* Услуги */
+    .services-section ul li {
+    color: #009999;
+    }
+    
+    /* Добавление BarhatTV */
+    .services-section ul li:last-child::after {
+    content: "BarhatTV";
+    color: #009999;
+    }
+    
+    /* Общие стили для ссылок */
+    a {
+    color: #009999;
+    text-decoration: none;
+    }
+    
+    a:hover {
+    text-decoration: underline;
+    }
+    
+    
+    /* Стили для вкладки Поддержка */
+    .contacts-section {
+        text-align: center;
+    }
+
+    .contact-info {
+        margin-bottom: 20px;
+    }
+
+    .contact-form {
+        max-width: 400px;
+        height: auto;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f5f5f5;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-form h3 {
+        margin: 0 0 10px;
+        font-size: 24px;
+    }
+
+    .contact-form form {
+        display: grid;
+        gap: 10px;
+    }
+
+    .contact-form label {
+        display: block;
+        font-weight: bold;
+    }
+
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+
+    .contact-form textarea {
+        resize: vertical;
+    }
+
+    .contact-form button {
+        padding: 8px 12px;
+        background-color: #009999;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 14px;
+        cursor: pointer;
+    }
+
+    .contact-form button:hover {
+        background-color: #017676;
+        color: #fff;
+    }
+
+    .contact-form button:focus {
+        outline: none;
+    }
+
+    .contact-form button:active {
+        transform: scale(0.98);
+    }
+    
+    /* Стили для вкладки Пакеты и услуги */
+    .services-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    text-align: center;
+    }
+    
+    .services-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #009999;
+    text-align: center;
+    width: 100%;
+    }
+    
+    .service {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+    }
+    
+    .service h3 {
+    margin-bottom: 10px;
+    }
+    
+    .service p {
+    margin-bottom: 5px;
+    }
+    
+    .service-button {
+    padding: 10px 20px;
+    background-color: #009999;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    }
+    .service-button:hover {
+    background-color: #017676;
+    color: #fff;
+    }
+
+    /* Стили для страницы оплаты */
+
+    .payment-section {
+    text-align: center;
+    }
+  
+  .payment-icon {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+    float: left;
+    margin-right: 10px;
+    }
+  
+    .payment-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    }
+  
+    .input {
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    outline: none;
+    }
+  
+    .pay-button {
+    padding: 10px 20px;
+    background-color: #009999;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    }
+  
+    .pay-button:hover {
+    background-color: #017676;
+    }
+    
+    /* Стили для вкладки "Личный кабинет" */
+main section {
+    margin: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 5px;
+}
+
+form {
+    margin-top: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #009999;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #017676;
+}
